@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil — Notas & Estadística</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            padding: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            color: #4a90e2;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: 8px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .info-item strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .info-item span {
+            color: #555;
+        }
+
+        .description {
+            color: #555;
+            text-align: justify;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        thead {
+            background: #4a90e2;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Perfil — Notas & Estadística</h1>
+            <p>Sistema de Gestión Académica</p>
+        </header>
+
+        <div class="section">
+            <h2>Información Personal</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Nombre:</strong>
+                    <span>Christian Bonifaz</span>
+                </div>
+                <div class="info-item">
+                    <strong>NRC:</strong>
+                    <span>27854</span>
+                </div>
+                <div class="info-item">
+                    <strong>Correo:</strong>
+                    <span>cmbonifaz@espe.edu.ec</span>
+                </div>
+                <div class="info-item">
+                    <strong>Edad:</strong>
+                    <span>24 años</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Presentación</h2>
+            <div class="description">
+                <p>
+                    Soy Christian Bonifaz, estudiante de Ingeniería de Software con 24 años de edad. 
+                    Me gusta el desarrollo de aplicaciones web y el análisis de datos, actualmente 
+                    estoy enfocado en aprender nuevas tecnologías y metodologías de desarrollo ágil 
+                    y disfruto muchisimo trabajar en proyectos que combinan la programación con la resolución de 
+                    problemas prácticos.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Registro de Calificaciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>NRC</th>
+                        <th>Calificación</th>
+                     
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ingenieria en Requisitos</td>
+                        <td>43243</td>
+                        <td>19</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos Avanzadas</td>
+                        <td>13424</td>
+                        <td>18</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Web Avanzada</td>
+                        <td>55422</td>
+                        <td>19</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Pruebas de software</td>
+                        <td>27854</td>
+                        <td>16</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>2026 Christian Bonifaz Examen p3</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
